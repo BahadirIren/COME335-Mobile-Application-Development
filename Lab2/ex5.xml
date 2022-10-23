@@ -1,0 +1,72 @@
+<footballTeams>
+    <team id="101">
+        <name>Manchester City FC</name>
+        <coach>Pep Guardiola</coach>
+        <league>Premier League</league>
+        <value currency="Euro">4.309.712.500</value>
+        <players>
+            <player id="901">
+                <name>Erling Haaland</name>
+                <position>Center-Forward</position>
+                <number>9</number>
+            </player>
+            <player id="902">
+                <name>Kevin De Bruyne</name>
+                <position>Midfielder</position>
+                <number>17</number>
+            </player>
+        </players>
+    </team>
+    <team id="102">
+        <name>Manchester United FC</name>
+        <coach>Erik ten Hag</coach>
+        <league>Premier League</league>
+        <value currency="Euro">4.664.630.000</value>
+        <players>
+            <player id="903">
+                <name>Cristiano Ronaldo</name>
+                <position>Center-Forward</position>
+                <number>7</number>
+            </player>
+        </players>
+    </team>
+    <team id="103">
+        <name>FC Barcelona</name>
+        <coach>Xavier Hernández</coach>
+        <league>La Liga</league>
+        <value currency="Euro">4.826.878.000</value>
+        <players>
+            <player id="904">
+                <name>Robert Lewandowski</name>
+                <position>Center-Forward</position>
+                <number>9</number>
+            </player>
+        </players>
+    </team>
+    <team id="104">
+        <name>Liverpool FC</name>
+        <coach>Jürgen Klopp</coach>
+        <league>Premier League</league>
+        <value currency="Euro">4.157.605.000</value>
+        <players>
+            <player id="905">
+                <name>Mohamed Salah</name>
+                <position>Right Winger</position>
+                <number>11</number>
+            </player>
+        </players>
+    </team>
+    <team id="105">
+        <name>Chelsea FC</name>
+        <coach>Graham Potter</coach>
+        <league>Premier League</league>
+        <value currency="Euro">3.133.414.500</value>
+        <players>
+            <player id="906">
+                <name>N'Golo Kanté</name>
+                <position>Midfielder</position>
+                <number>7</number>
+            </player>
+        </players>
+    </team>
+</footballTeams>
