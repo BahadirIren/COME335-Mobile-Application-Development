@@ -1,18 +1,182 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/linearLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/post1LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_large"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/post1Header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/post1Avatar"
+                    android:layout_width="@dimen/avatar_width"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    app:src="@drawable/avatar1"
+                    app:srcCompat="@drawable/avatar1" />
+
+                <LinearLayout
+                    android:id="@+id/post1HeaderInformation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minHeight="50dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/post1Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_small"
+                        android:text="Panda Pixel" />
+
+                    <TextView
+                        android:id="@+id/post1Date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="12 mins ago" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/post1Image"
+                android:layout_width="match_parent"
+                android:layout_height="226dp"
+                android:scaleType="centerCrop"
+                app:src="@drawable/landscape1"
+                app:srcCompat="@drawable/landscape1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/post2LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_large"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/post2Header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/post2Avatar"
+                    android:layout_width="@dimen/avatar_width"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    app:src="@drawable/avatar2"
+                    app:srcCompat="@drawable/avatar2" />
+
+                <LinearLayout
+                    android:id="@+id/post2HeaderInformation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minHeight="50dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/post2Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_small"
+                        android:text="Angga Risky" />
+
+                    <TextView
+                        android:id="@+id/post2Date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="7 mins ago" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/post2Image"
+                android:layout_width="match_parent"
+                android:layout_height="226dp"
+                android:scaleType="centerCrop"
+                app:src="@drawable/landscape2"
+                app:srcCompat="@drawable/landscape2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/post3LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/post3Header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/post3Avatar"
+                    android:layout_width="@dimen/avatar_width"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    app:src="@drawable/avatar3"
+                    app:srcCompat="@drawable/avatar3" />
+
+                <LinearLayout
+                    android:id="@+id/post3HeaderInformation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minHeight="50dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/post3Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_small"
+                        android:text="James Allen" />
+
+                    <TextView
+                        android:id="@+id/post3Date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="48 mins ago" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/post3Image"
+                android:layout_width="match_parent"
+                android:layout_height="226dp"
+                android:scaleType="centerCrop"
+                app:src="@drawable/landscape3"
+                app:srcCompat="@drawable/landscape3" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
