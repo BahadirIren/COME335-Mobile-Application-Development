@@ -17,7 +17,7 @@ import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
-public class HairModelAdapter extends RecyclerView.Adapter<HairModelAdapter.HairModelHolder> {
+public class HairModelAdapter extends RecyclerView.Adapter<HairModelAdapter.ViewHolder> {
     ArrayList<HairModel> hairModelArrayList;
     Context context;
 
@@ -28,14 +28,14 @@ public class HairModelAdapter extends RecyclerView.Adapter<HairModelAdapter.Hair
 
     @NonNull
     @Override
-    public HairModelHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(context).inflate(R.layout.hair_model_list_item, parent, false);
 
-        return new HairModelHolder(itemView, context);
+        return new ViewHolder(itemView, context);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull HairModelHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.bind(hairModelArrayList.get(position));
     }
 
@@ -44,13 +44,13 @@ public class HairModelAdapter extends RecyclerView.Adapter<HairModelAdapter.Hair
         return hairModelArrayList.size();
     }
 
-    public static class HairModelHolder extends RecyclerView.ViewHolder{
+    public static class ViewHolder extends RecyclerView.ViewHolder{
         TextView hairTextView;
         ImageView hairImageView;
         LinearLayout linearLayout;
         Context context;
 
-        public HairModelHolder(@NonNull View itemView, Context context) {
+        public ViewHolder(@NonNull View itemView, Context context) {
             super(itemView);
             this.context = context;
             this.hairTextView = itemView.findViewById(R.id.hairNameTextView);
