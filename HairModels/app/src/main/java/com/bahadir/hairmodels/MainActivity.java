@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void init_UI(){
-        recyclerView = findViewById(R.id.recylerView);
+        recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new HairModelAdapter(HairModelService.getHairModels(),this));
